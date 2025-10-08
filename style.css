@@ -90,6 +90,27 @@ body {
 }
 
 /* Social Section */
+/* Social Section */
+.social {
+  padding: 80px 20px;
+  text-align: center; /* keeps title centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything horizontally */
+  justify-content: center;
+}
+
+.social h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-links a {
   margin: 0 15px;
   color: #000;
