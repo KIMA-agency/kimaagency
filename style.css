@@ -4,14 +4,13 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #000;
   background-color: #fff;
-  background-image: url('57288aa8-1b22-4d35-911b-eea74b3dc375.jpeg'); /* pattern */
+  background-image: url('images/patern.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
-/* Navbar */
 /* Navbar */
 .navbar {
   position: fixed;
@@ -96,13 +95,69 @@ body {
   line-height: 1.6;
 }
 
+/* Visual Story Section */
+.visuals {
+  padding: 100px 20px;
+  background-color: #fff;
+}
+
+.visual-block {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 40px;
+  margin: 0 auto 100px auto; 
+  flex-wrap: wrap;
+  max-width: 1100px;
+}
+
+.visual-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.visual-image img {
+  width: 450px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.visual-text {
+  max-width: 450px;
+  text-align: left;
+}
+
+.visual-text h2 {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.visual-text p {
+  color: #444;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.visual-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.visual-text li::marker {
+  color: #000;
+}
+
 /* Social Section */
 .social {
   padding: 80px 20px;
-  text-align: center; /* keeps title centered */
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers everything horizontally */
+  align-items: center;
   justify-content: center;
 }
 
@@ -153,73 +208,22 @@ footer {
   font-size: 0.85rem;
   color: #777;
 }
-/* Visual Story Section */
-.visuals {
-  padding: 100px 20px;
-  background-color: #fff;
-  background-image: url('images/pattern.jpg');
-  background-repeat: repeat;
-  background-size: contain;
-}
 
-.visual-block {
+/* Responsive & Centering Fix */
+.hero, .about, .visuals, .social, .contact {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; 
-  gap: 40px;
-  margin: 0 auto 100px auto; 
-  flex-wrap: wrap;
-  max-width: 1100px; /* keeps it centered within a nice width */
+  text-align: center;
 }
 
-.visual-block.reverse {
-  flex-direction: row-reverse;
+@media (max-width: 768px) {
+  .visual-text {
+    text-align: center;
+  }
+
+  .visual-image img {
+    width: 90%;
+  }
 }
 
-.visual-image img {
-  width: 450px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.visual-text {
-  max-width: 450px;
-  text-align: left;
-}
-
-.visual-text h2 {
-  color: black;
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.visual-text p {
-  color: #444;
-  font-size: 17px;
-  line-height: 1.6;
-}
-
-.visual-text ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #444;
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-.visual-text li::marker {
-  color: #000;
-}
-
-/* Optional: small animation */
-.visual-block {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
-
-.visual-block.show {
-  opacity: 1;
-  transform: translateY(0);
-}
