@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header class="navbar">
@@ -33,13 +34,24 @@
   <section id="about" class="about">
     <h2>About Us</h2>
     <p>
-      KIMA is an influencer marketing agency that connects brands with the right influencers to build trust, grow audiences, 
-      and achieve measurable impact. We help brands and influencers collaborate effectively for meaningful campaigns.
+      KIMA is an influencer marketing agency that connects brands with the right influencers to build trust,
+      grow audiences, and achieve measurable impact. We help brands and influencers collaborate effectively
+      for meaningful campaigns.
     </p>
   </section>
 
-  <!-- Visual Story Section -->
-  <section class="visuals">
+  <!-- Social Section -->
+  <section id="social" class="social">
+    <h2>Find Us</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/kima.agn/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/kima-agency-2b0582388" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:contact@kimaagencey.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="visuals">
     <div class="visual-block">
       <div class="visual-image">
         <img src="images/dashboard.png" alt="Dashboard showing marketing performance">
@@ -68,24 +80,29 @@
     </div>
   </section>
 
-  <!-- Social Section -->
-  <section id="social" class="social">
-    <h2>Find Us</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/kima.agn/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/in/kima-agency-2b0582388" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:contact@kimaagencey.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p><a href="mailto:contact@kimaagencey.com">contact@kimaagencey.com</a></p>
+    <p>
+      <a href="mailto:contact@kimaagencey.com">contact@kimaagencey.com</a>
+    </p>
   </section>
 
   <footer>
     <p>© 2025 KIMA Agency. All rights reserved.</p>
   </footer>
+
+  <!-- Optional: Scroll animation -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.visual-block').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
