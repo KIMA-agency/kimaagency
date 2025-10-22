@@ -7,67 +7,50 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <nav class="navbar">
-      <img src="images/logo agency.jpg" alt="KIMA Agency Logo" class="logo">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <img src="images/logo.jpg" alt="KIMA Agency Logo" class="logo">
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#social">Find Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="images/logo agency.jpg" alt="KIMA Logo" class="logo" />
+    <img src="LOGO-300x300-kima.jpg" alt="KIMA Logo" class="hero-logo" />
     <h1>KIMA</h1>
-    <p class="tagline">
-      Connecting brands with the right influencers to create authentic collaborations that drive real results.
-    </p>
+    <p class="tagline">Connecting brands with the right influencers to create authentic collaborations that drive real results.</p>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about">
     <h2>About Us</h2>
     <p>
-      KIMA is an influencer marketing agency that connects brands with the right influencers to build trust,
-      grow audiences, and achieve measurable impact. We help brands and influencers collaborate effectively
-      for meaningful campaigns.
+      KIMA is an influencer marketing agency that connects brands with the right influencers to build trust, grow audiences,
+      and achieve measurable impact. We help brands and influencers collaborate effectively for meaningful campaigns.
     </p>
-  </section>
-
-  <!-- Social Section -->
-  <section id="social" class="social">
-    <h2>Find Us</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/kima.agn/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/in/kima-agency-2b0582388" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:contact@kimaagencey.com"><i class="fas fa-envelope"></i></a>
-    </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="visuals">
     <div class="visual-block">
       <div class="visual-image">
-        <img src="images/dashboard.png" alt="Dashboard showing marketing performance">
+        <img src="images/dashboard.jpg" alt="Dashboard showing marketing performance">
       </div>
       <div class="visual-text">
         <h2>Turning Partnerships Into Powerful Marketing</h2>
-        <p>
-          Influencers build lasting collaborations with trusted names.<br>
-          Brands get genuine visibility and engagement.
-        </p>
+        <p>Influencers build lasting collaborations with trusted names.<br>
+        Brands get genuine visibility and engagement.</p>
       </div>
     </div>
 
     <div class="visual-block reverse">
       <div class="visual-image">
-        <img src="images/Analytics Illustration.jpeg" alt="Influencer collaboration illustration">
+        <img src="images/illustration.jpg" alt="Influencer collaboration illustration">
       </div>
       <div class="visual-text">
         <h2>How We Make It Work</h2>
@@ -80,29 +63,24 @@
     </div>
   </section>
 
+  <!-- Social Section -->
+  <section id="social" class="social">
+    <h2>Find Us</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/kima.agn/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/kima-agency-2b0582388" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:contact@kimaagencey.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>
-      <a href="mailto:contact@kimaagencey.com">contact@kimaagencey.com</a>
-    </p>
+    <p><a href="mailto:contact@kimaagencey.com">contact@kimaagencey.com</a></p>
   </section>
 
   <footer>
     <p>© 2025 KIMA Agency. All rights reserved.</p>
   </footer>
-
-  <!-- Optional: Scroll animation -->
-  <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    });
-
-    document.querySelectorAll('.visual-block').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
