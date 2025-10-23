@@ -1,9 +1,14 @@
-/* General styles */
-body {
+/* General Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  color: #000;
+}
+
+body {
   background-color: #D9D9D9;
+  color: #000;
   scroll-behavior: smooth;
 }
 
@@ -16,97 +21,75 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
-.navbar ul {
+.navbar img {
+  width: 110px;
+  height: auto;
+}
+
+.nav-links {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin: 0;
-  padding: 0;
 }
 
-.navbar ul li a {
+.nav-links a {
   text-decoration: none;
   color: black;
   font-weight: 500;
-  font-size: 15px;
   transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
-  color: gray;
+.nav-links a:hover {
+  color: #0077ff;
 }
 
-.logo {
-  height: 35px;
-  width: auto;
-}
-
-/* Hero */
+/* Hero Section */
 .hero {
-  min-height: 100vh;
+  padding-top: 140px;
+  text-align: center;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 120px 20px 80px;
+  align-items: center;
 }
 
 .hero-logo {
-  width: 120px;
+  width: 130px;
   height: auto;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
+  font-weight: 700;
   margin-bottom: 10px;
-  letter-spacing: 2px;
 }
 
-.tagline {
-  font-size: 1rem;
-  color: #000;
-  max-width: 600px;
+.hero p {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-/* About Section */
-.about {
+/* Sections */
+.section {
   padding: 100px 20px;
   text-align: center;
 }
 
-.about h2 {
-  margin-bottom: 20px;
-  color: #000;
-}
-
-.about p {
-  color: #000;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Services (Visual Story Section) */
-.visuals {
-  padding: 100px 20px;
-  background-color: #D9D9D9;
-}
-
+/* Visual Blocks */
 .visual-block {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 60px;
-  margin: 0 auto 100px auto;
+  justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  max-width: 1100px;
 }
 
 .visual-block.reverse {
@@ -114,20 +97,18 @@ body {
 }
 
 .visual-image img {
-  width: 500px;
+  width: 450px;
   height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .visual-text {
-  flex: 1 1 400px;
-  max-width: 500px;
+  max-width: 450px;
   text-align: left;
 }
 
 .visual-text h2 {
-  color: #000;
   font-size: 28px;
   margin-bottom: 15px;
 }
@@ -144,64 +125,30 @@ body {
   padding-left: 20px;
 }
 
-.visual-text li::marker {
-  color: #000;
-}
-
-/* Social Section */
-.social {
-  padding: 80px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social h2 {
-  margin-bottom: 20px;
-  color: #000;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-links a {
-  margin: 0 15px;
-  color: #000;
-  font-size: 28px;
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #555;
-  transform: scale(1.1);
-}
-
 /* Contact Section */
-.contact {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.contact a {
-  color: #000;
+.contact .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #000;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+.contact .btn:hover {
+  background-color: #333;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 30px;
-  font-size: 0.85rem;
+  padding: 30px 0;
+  background-color: white;
+  font-size: 14px;
   color: #000;
 }
+
 
 
