@@ -1,87 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KIMA | Influencer Marketing Agency</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <nav>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#findus">Find Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<section id="services" aria-labelledby="services-heading">
+  <h2 id="services-heading">Services</h2>
+  <div class="cards" role="list">
+    <article class="card" role="listitem">
+      <h3><i class="fas fa-laptop-code" aria-hidden="true"></i> Web Development</h3>
+      <p>Responsive sites, modern JS frameworks and fast performance.</p>
+    </article>
+    <article class="card" role="listitem">
+      <h3><i class="fas fa-mobile-alt" aria-hidden="true"></i> Mobile Apps</h3>
+      <p>iOS & Android apps with great UX and solid engineering.</p>
+    </article>
+    <article class="card" role="listitem">
+      <h3><i class="fas fa-bullhorn" aria-hidden="true"></i> Branding & Marketing</h3>
+      <p>Strategy, identity and campaigns that convert.</p>
+    </article>
+  </div>
+</section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="images/logo.jpg" alt="KIMA Logo" class="logo" />
-    <h1>KIMA</h1>
-    <p class="tagline">Connecting brands with the right influencers to create authentic collaborations that drive real results.</p>
-  </section>
+<section id="findus" class="social" aria-labelledby="findus-heading">
+  <h2 id="findus-heading">Find Us</h2>
+  <p>Follow or contact us on these platforms:</p>
+  <div class="social-links">
+    <a href="https://www.instagram.com/kima.agn/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/kima-agency-2b0582388" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
+    </a>
+    <a href="mailto:contact@kimaagency.com" aria-label="Email">
+      <i class="fas fa-envelope" aria-hidden="true"></i>
+    </a>
+  </div>
+  <img src="images/illustration.jpg" alt="Illustration" style="max-width:300px;margin-top:12px;border-radius:8px;">
+</section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      KIMA is an influencer marketing agency that connects brands with the right influencers to build trust, grow audiences, 
-      and achieve measurable impact. We help brands and influencers collaborate effectively for meaningful campaigns that truly deliver.
-    </p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="visuals">
-    <div class="visual-block">
-      <div class="visual-image">
-        <img src="images/dashboard.jpg" alt="Dashboard showing marketing performance">
+<section id="contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact</h2>
+  <div class="contact-form">
+    <!-- Replace action with your form endpoint or handling code -->
+    <form action="#" method="post" class="form-grid" aria-describedby="contact-desc">
+      <p id="contact-desc" style="margin:0 0 8px;color:var(--muted);font-size:14px;">Send us a message and we'll get back to you.</p>
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+      <div>
+        <button type="submit">Send Message</button>
       </div>
-      <div class="visual-text">
-        <h2>Turning Partnerships Into Powerful Marketing</h2>
-        <p>Influencers build lasting collaborations with trusted names.<br>
-        Brands get genuine visibility and engagement.</p>
-      </div>
-    </div>
-
-    <div class="visual-block reverse">
-      <div class="visual-image">
-        <img src="images/illustration.jpg" alt="Influencer collaboration illustration">
-      </div>
-      <div class="visual-text">
-        <h2>How We Make It Work</h2>
-        <ul>
-          <li>Finding the perfect influencer (not just numbers)</li>
-          <li>Managing collaboration details</li>
-          <li>Tracking performance and engagement</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Find Us Section -->
-  <section id="findus" class="social">
-    <h2>Find Us</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/kima.agn/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/in/kima-agency-2b0582388" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:contact@kimaagencey.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p><a href="mailto:contact@kimaagencey.com">contact@kimaagencey.com</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 KIMA Agency. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+    </form>
+  </div>
+</section>
